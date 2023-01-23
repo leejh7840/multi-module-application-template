@@ -1,0 +1,6 @@
+rootProject.name = 'multi-module-application'
+include 'app-data'
+include 'app-model'
+include 'app-service'
+include 'app-web'
+

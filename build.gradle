@@ -1,0 +1,38 @@
+plugins {
+
+	id 'org.springframework.boot' version '2.6.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+
+}
+
+allprojects {
+
+	group = 'com.nexient'
+	version = '0.0.1-SNAPSHOT'
+	sourceCompatibility = '17'
+
+	repositories {
+		mavenCentral()
+	}
+
+	test {
+		useJUnitPlatform()
+	}
+
+}
+
+bootJar {
+	enabled = false
+}
+
+jar {
+	enabled = true
+}
+
+//dependencies {
+//	implementation project(":app-model")
+//	implementation project(":app-service")
+//	implementation project(":app-data")
+//	implementation project(":app-web")
+//}
